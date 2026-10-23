@@ -61,3 +61,26 @@ Pipelinen (jobbet *Image* i `.github/workflows/ci.yml`) bygger `api` och `client
 ## Deploy
 
 Kommer i M6.
+
+## Mätning
+
+*Mätning före/efter (M5):*
+
+2 databasfrågor
+
+*Siffra vid sabotage & felmeddelande:*
+
+Test Files 0 passed (1)
+ ❯ src/graphql/server.test.js (6 tests | 1 failed) 195ms
+   × GraphQL-API:et mot riktig databas > turlistan: 50 turer med vem som gick – för två databasfrågor, inte 51 111ms
+     → expected 51 to be less than or equal to 2
+   ✓ guide(slug) som inte finns är null – inte ett fel 5ms
+   ✓ ett fält som inte finns ger errors – med statuskod 200 3ms
+   ✓ createTour utan token nekas med koden UNAUTHENTICATED 5ms
+   ✓ createTour med token skapar turen i den inloggades namn 17ms
+   ✓ mätpunkterna kommer från MongoDB och är lika många som i Postgres 45ms
+
+Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (6)
+   Start at  11:00:31
+   Duration  22.79s (transform 177ms, setup 0ms, collect 21.23s, tests 195ms, environment 0ms, prepare 957ms)

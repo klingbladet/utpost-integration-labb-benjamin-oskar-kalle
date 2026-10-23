@@ -47,3 +47,15 @@ Vi får skriva en label på varje formulärfält (annars hittar inte testet det)
 
 ## Kommandon
 `npm test` (en gång, som i pipelinen) · `npm run test:watch --workspace=client`
+
+
+## Test mätningar
+Första körning
+1 test. 2.30s
+
+Andra körning
+6 test. 1.58s
+
+Tredje körning (utan dataloader)
+
+6 test, 1 failed. 11s
