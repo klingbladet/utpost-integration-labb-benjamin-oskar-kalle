@@ -47,3 +47,7 @@ Vi får skriva en label på varje formulärfält (annars hittar inte testet det)
 
 ## Kommandon
 `npm test` (en gång, som i pipelinen) · `npm run test:watch --workspace=client`
+
+## Mätning
+
+Antal tester och körtid lokalt: tests 1 passed (1) duration 3.87s

@@ -61,3 +61,11 @@ Pipelinen (jobbet *Image* i `.github/workflows/ci.yml`) bygger `api` och `client
 ## Deploy
 
 Kommer i M6.
+
+## Mätningar
+Databasfrågor för query Turer: 2
+
+
+51
+ GraphQL-API:et mot riktig databas > turlistan: 50 turer med vem som gick – för två databasfrågor, inte 51 277ms
+     → expected 51 to be less than or equal to 2
